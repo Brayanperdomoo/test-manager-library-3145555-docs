@@ -68,3 +68,7 @@ All code, documentation, interface text, validation messages, and API error mess
 ## Traceable delivery
 
 Implement one reviewable acceptance-criteria slice at a time. Each commit uses the next `hu-main-NN` identifier, states the change in English, and includes the relevant evidence. Update this guide and the source specification together whenever a business or contract decision changes.
+
+## Acceptance gap: immediate overdue demo records
+
+The demo-data task asks the seeder to produce three overdue items through the API. The contract sets every due date to the server-assigned loan instant plus 14 days and does not accept a historical loan instant or due date. Therefore, a fresh seeder cannot create overdue items immediately without waiting, adding an explicitly specified test clock/demo capability, or bypassing the API. Do not claim that the overdue seeder criterion is satisfied until the product owner resolves this contract gap.
