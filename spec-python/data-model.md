@@ -190,11 +190,11 @@ The **five categories** are inserted by the initial migration with fixed identif
 
 | `id` | `name` |
 |---|---|
-| `11111111-1111-4111-8111-111111111111` | Novela |
-| `22222222-2222-4222-8222-222222222222` | Ciencia |
-| `33333333-3333-4333-8333-333333333333` | Tecnología |
-| `44444444-4444-4444-8444-444444444444` | Historia |
-| `55555555-5555-4555-8555-555555555555` | Infantil |
+| `11111111-1111-4111-8111-111111111111` | Novel |
+| `22222222-2222-4222-8222-222222222222` | Science |
+| `33333333-3333-4333-8333-333333333333` | Technology |
+| `44444444-4444-4444-8444-444444444444` | History |
+| `55555555-5555-4555-8555-555555555555` | Children's |
 
 The database does **not** seed the initial administrator: application startup creates it from environment credentials because only the password-hashing port can produce the hash. The demo data seeder (`tool`) uses the **API**, never direct SQL.
 

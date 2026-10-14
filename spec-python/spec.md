@@ -92,7 +92,7 @@ As a user, I want to authenticate so I can operate according to my role.
 | BR-3 | A member with overdue items cannot borrow more until they return them. |
 | BR-4 | Snapshotted item data (title, ISBN, category) does not follow later catalog changes. |
 | BR-5 | Loans and returns are never deleted. Books are only soft-deleted. |
-| BR-6 | Timestamps are UTC instants. User-facing messages are in Spanish; code and column names are in English. |
+| BR-6 | Timestamps are UTC instants. User-facing messages, code, and column names are in English. |
 
 ## 5. Non-functional requirements
 

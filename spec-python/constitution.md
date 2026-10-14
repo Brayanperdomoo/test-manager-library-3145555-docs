@@ -1,4 +1,4 @@
-# Constitución — Manager Library (Python)
+﻿# Constitución — Manager Library (Python)
 
 Principios innegociables del proyecto. No son estilo ni preferencia: cada artículo trae **cómo se verifica**, porque un principio que
 nadie puede comprobar es una intención. Un cambio que viole un artículo se rechaza sin discutir el resto.
@@ -67,7 +67,7 @@ Si el documento de datos y la base discrepan, el documento está roto y se corri
 
 ## Article XI — Language
 
-Code, columns, and routes are in English. Documentation may be in English or Spanish. User-facing messages are in Spanish.
+Code, columns, and routes are in English. Documentation and user-facing messages are in English.
 
 ## Artículo XII — Nada se da por hecho sin evidencia
 

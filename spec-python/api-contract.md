@@ -13,15 +13,15 @@ The HTTP contract is **language-independent**: an implementation in React + Lara
 | Money | None. The system does not handle monetary amounts |
 | Authentication | `Authorization: Bearer <token>` on every endpoint except `POST /auth/login` and `GET /health` |
 | Pagination | `?page=1&size=20`. `size` max. 50. Response: `{ "items": [...], "page": 1, "size": 20, "total": 134 }` |
-| Language | Error messages are in Spanish; fields and codes are in English |
+| Language | User-facing messages, fields, and codes are in English |
 
 ### Error body (same shape for every error)
 
 ```json
 {
   "code": "BOOK_NOT_AVAILABLE",
-  "message": "No quedan ejemplares disponibles de «Cien años de soledad».",
-  "details": [ { "field": "items[0].book_id", "issue": "sin ejemplares" } ]
+  "message": "No copies of \"One Hundred Years of Solitude\" are available.",
+  "details": [ { "field": "items[0].book_id", "issue": "no copies available" } ]
 }
 ```
 
@@ -111,8 +111,8 @@ Book response:
 
 ```json
 {
-  "id": "…", "title": "Cien años de soledad", "author": "Gabriel García Márquez",
-  "isbn": "9780307474728", "category": { "id": "…", "name": "Novela" },
+  "id": "…", "title": "Pride and Prejudice", "author": "Jane Austen",
+  "isbn": "9780307474728", "category": { "id": "…", "name": "Novel" },
   "total_copies": 4, "available_copies": 3, "cover_key": null
 }
 ```
@@ -147,8 +147,8 @@ Book response:
 {
   "id": "…", "member_id": "…", "loaned_at": "2026-10-14T14:15:00Z", "status": "open",
   "items": [
-    { "id": "…", "book_id": "…", "book_title": "Cien años de soledad", "isbn": "9780307474728",
-      "category_name": "Novela", "due_at": "2026-10-28T14:15:00Z", "returned_at": null }
+    { "id": "…", "book_id": "…", "book_title": "Pride and Prejudice", "isbn": "9780307474728",
+      "category_name": "Novel", "due_at": "2026-10-28T14:15:00Z", "returned_at": null }
   ]
 }
 ```
@@ -169,7 +169,7 @@ Book response:
 {
   "from": "2026-10-01", "to": "2026-10-31",
   "rows": [
-    { "book_id": "…", "book_title": "Cien años de soledad", "category_name": "Novela", "times_borrowed": 12 }
+    { "book_id": "…", "book_title": "Pride and Prejudice", "category_name": "Novel", "times_borrowed": 12 }
   ]
 }
 ```
