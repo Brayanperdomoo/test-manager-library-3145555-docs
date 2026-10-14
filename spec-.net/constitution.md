@@ -65,9 +65,9 @@ Ni contraseñas, ni hashes precalculados, ni la clave del token. Todo secreto vi
 
 Si el documento de datos y la base discrepan, el documento está roto y se corrige el documento.
 
-## Artículo XI — Idioma
+## Article XI — Language
 
-Código, columnas y rutas en inglés. Documentación y mensajes al usuario en español.
+Code, columns, and routes are in English. Documentation may be in English or Spanish. User-facing messages are in Spanish.
 
 ## Artículo XII — Nada se da por hecho sin evidencia
 
